@@ -7,19 +7,6 @@ on:
       - '*.md'
       - 'LICENSE'
       - 'docs/**'
-  push:
-    branches:
-      - master
-      - develop
-      - release/*
-    tags-ignore:
-      - '*'
-    paths-ignore:
-      - '.txt'
-      - '*.MD'
-      - '*.md'
-      - 'LICENSE'
-      - 'docs/**'
 
 jobs:
   build:
