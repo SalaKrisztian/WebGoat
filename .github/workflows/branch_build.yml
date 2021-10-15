@@ -46,7 +46,7 @@ jobs:
         uses: actions/cache@v2.1.5
         with:
           path: ~/.m2
-          key: ubuntu-latest-m2-${{ hashFiles('**/pom.xml') }}
-          restore-keys: ubuntu-latest-m2
+          key: ubuntu-m2-${{ hashFiles('**/pom.xml') }}
+          restore-keys: ubuntu-m2
       - name: Test with Maven
         run: ${{ matrix.args }}
